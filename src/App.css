@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #87a8d81a;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  width: 140px;
+  height: 35px;
+  border: 2px dotted rgb(108, 25, 187);
+  background: inherit;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: monospace;
+}
+.btn:focus {
+  outline: none;
+  background: lightblue;
+  border: 3px dotted rgb(132, 22, 235);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btnnum:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active {
+  background: lightblue;
+  font-size: 35px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+.center p {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: monospace;
+  padding: 0 5px;
+}
+/* active when win or draw */
+.win {
+  background: #ff5416e5;
+  border: 2px dotted darkblue;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+.draw {
+  background: rgb(95 255 103);
+}
+
+.btnsquare {
+  background: lightblue;
+  border: 1px solid darkblue;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  width: auto;
+}
+
+
+/* home css  */
+
+.home-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.home-section > ul {
+  margin-top:20px;
+  
+}
+.list {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.home-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+}
+.hom-box-h1 {
+  font-size: 52px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-a {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
 }
